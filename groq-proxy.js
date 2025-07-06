@@ -14,7 +14,8 @@ app.post("/chat", async (req, res) => {
     const result = await axios.post(
       "https://api.groq.com/openai/v1/chat/completions",
       {
-        model: "mixtral-8x7b-32768",
+        model: "llama3-8b-8192",
+
         messages: [
           { role: "system", content: "You are a helpful assistant." },
           { role: "user", content: req.body.message }
