@@ -22,7 +22,7 @@ app.post("/chat", async (req, res) => {
       },
       {
         headers: {
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer ${GROQ_API_KEY}`,
           "Content-Type": "application/json"
         }
       }
